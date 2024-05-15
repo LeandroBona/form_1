@@ -1,3 +1,4 @@
+console.log("funcionou")
 document.getElementById("myForm").addEventListener("submit", function(event) {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
@@ -15,6 +16,6 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
 });
 
 function validateEmail(email) {
-    var re = /\S+@\S+\.\S+/;
+    var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
 }
