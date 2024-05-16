@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para dispositivos móveis -->
+    <title>Formulário</title> <!-- Define o título da página -->
+    <link rel="stylesheet" href="styles.css"> <!-- Importa o arquivo CSS externo -->
 </head>
 <body>
-    <h1>Formulário</h1>
-    <form action="#" method="POST" id="myForm">
+    <h1>Formulário</h1> <!-- Título principal da página -->
+    <form action="#" method="POST" id="myForm"> <!-- Formulário com método de envio POST -->
         <div class="form-group">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" >
+            <label for="name">Nome:</label> <!-- Etiqueta para o campo de nome -->
+            <input type="text" id="name" name="name"> <!-- Campo de entrada para o nome -->
         </div>
         <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" >
+            <label for="email">Email:</label> <!-- Etiqueta para o campo de email -->
+            <input type="email" id="email" name="email"> <!-- Campo de entrada para o email -->
         </div>
         <div class="form-group">
-            <label for="gender">Gênero:</label>
-            <select id="gender" name="gender" >
-                <option value="">Selecione...</option>
-                <option value="male">Masculino</option>
-                <option value="female">Feminino</option>
-                <option value="other">Outro</option>
+            <label for="gender">Gênero:</label> <!-- Etiqueta para o campo de gênero -->
+            <select id="gender" name="gender"> <!-- Caixa de seleção para o gênero -->
+                <option value="">Selecione...</option> <!-- Opção padrão -->
+                <option value="male">Masculino</option> <!-- Opção para gênero masculino -->
+                <option value="female">Feminino</option> <!-- Opção para gênero feminino -->
+                <option value="other">Outro</option> <!-- Opção para outro gênero -->
             </select>
         </div>
         <div class="form-group">
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" rows="4"></textarea>
+            <label for="message">Mensagem:</label> <!-- Etiqueta para o campo de mensagem -->
+            <textarea id="message" name="message" rows="4"></textarea> <!-- Área de texto para a mensagem -->
         </div>
-        <button type="submit">Enviar</button>
+        <button type="submit">Enviar</button> <!-- Botão de envio do formulário -->
     </form>
+
+    <div id="overlay" class="overlay"> <!-- Overlay para exibir uma mensagem de confirmação -->
+        <div class="overlay-content">
+            <p>Suas informações foram enviadas com sucesso!</p> <!-- Mensagem de confirmação -->
+            <button id="closeOverlay">Fechar</button> <!-- Botão para fechar o overlay -->
+        </div>
+    </div>
 </body>
-<script src="script.js"></script>
+<script src="script.js"></script> <!-- Importa o arquivo JavaScript externo -->
 </html>

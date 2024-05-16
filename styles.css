@@ -1,43 +1,86 @@
+/* Estilos para o corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif; /* Define a família de fontes */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimento */
+    background-color: #f4f4f4; /* Define a cor de fundo */
 }
 
+/* Estilos para os cabeçalhos <h1> */
 h1 {
-    text-align: center;
+    text-align: center; /* Alinha texto ao centro */
 }
 
+/* Estilos para grupos de formulários */
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adiciona espaço abaixo de cada grupo de formulário */
 }
 
+/* Estilos para etiquetas */
 label {
-    display: block;
-    font-weight: bold;
+    display: block; /* Exibe as etiquetas como blocos */
+    font-weight: bold; /* Define a espessura da fonte como negrito */
 }
 
+/* Estilos para inputs de texto, email, selects e textareas */
 input[type="text"],
 input[type="email"],
 select,
 textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 100%; /* Define a largura como 100% */
+    padding: 10px; /* Adiciona preenchimento */
+    border: 1px solid #ccc; /* Adiciona uma borda sólida */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
 }
 
+/* Estilos para botões de envio */
 button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
+    background-color: #4CAF50; /* Define a cor de fundo */
+    color: white; /* Define a cor do texto */
+    padding: 12px 20px; /* Adiciona preenchimento */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    cursor: pointer; /* Altera o cursor para um ponteiro */
+    width: 100%; /* Define a largura como 100% */
 }
 
 button[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* Estilos para a sobreposição (overlay) */
+.overlay {
+    position: fixed; /* Define a posição como fixa */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Define a largura como 100% */
+    height: 100%; /* Define a altura como 100% */
+    background: rgba(0, 0, 0, 0.7); /* Define uma cor de fundo semi-transparente */
+    display: none; /* Oculta por padrão */
+    justify-content: center; /* Alinha conteúdo ao centro */
+    align-items: center; /* Alinha conteúdo ao centro */
+}
+
+.overlay-content {
+    background: white; /* Define a cor de fundo */
+    padding: 20px; /* Adiciona preenchimento */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    text-align: center; /* Alinha texto ao centro */
+}
+
+.overlay-content p {
+    margin-bottom: 20px; /* Adiciona espaço abaixo de parágrafos */
+}
+
+.overlay-content button {
+    padding: 10px 20px; /* Adiciona preenchimento */
+    border: none; /* Remove a borda */
+    background-color: #007BFF; /* Define a cor de fundo */
+    color: white; /* Define a cor do texto */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    cursor: pointer; /* Altera o cursor para um ponteiro */
+}
+
+.overlay-content button:hover {
+    background-color: #0056b3; /* Altera a cor de fundo ao passar o mouse */
 }
